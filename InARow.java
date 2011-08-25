@@ -128,13 +128,11 @@ public class InARow extends JFrame implements ActionListener {
     inARowCount = 0;
     tmpx = x;
     tmpy = y;
-    System.out.println("---");
-
+    
     for (int i = 0; i < inARow; i++) {
       if (grid.length > tmpx && grid[x].length > tmpy && tmpx >= 0 && tmpy >= 0) {
         if (grid[tmpx][tmpy].getText().equals(team)) {
           inARowCount++;
-          System.out.println("fond");
         }
       }
 
